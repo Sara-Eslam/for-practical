@@ -1,0 +1,12 @@
+name: Run automated tests
+on:
+  pull_request:
+    branches:
+      - main
+jobs:
+  TestJob:
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Checkout the project's source code from the repository.
+      - name: Checkout project sources
+        uses: actions/checkout@v4
